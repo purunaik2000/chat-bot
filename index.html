@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChatBot</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <ul class="lists">
+                <li class="list" id="icon">
+                    <img src="./image/chatbot-icon.png" alt="chatbot-icon">
+                </li>
+                <li class="list">
+                    Chatbot
+                </li>
+                <!-- <li>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="box-container">
+        <div class="box text">
+            <div class="msg-container" id="msg-container"></div>
+        </div>
+        <div class="box" id="chat">
+            <form action="#" id="form">
+                <input id="inp" type="text" placeholder="Message"/>
+                <button title="send" type="submit" id="btn" class="btn">
+                    <img src="./image/send-button.png" alt="send">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
